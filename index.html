@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dice game</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="player-turn">Player 1 turn.</h2>
+        <h2 class="winner"></h2>
+        <div class="game">
+            <div class="player player1">
+                <h1>PLAYER 1</h1>
+                <h2 class="total-score total-score-p1">0</h2>
+                <div class="current-score">
+                    <p>CURRENT</p>
+                    <h3 class="current-score-p1">7</h3>
+                </div>
+            </div>
+            <div class="player player2">
+                <h1>PLAYER 2</h1>
+                <h2 class="total-score total-score-p2">10</h2>
+                <div class="current-score">
+                    <p>CURRENT</p>
+                    <h3 class="current-score-p2">0</h3>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="Game.resetGame()">NEW GAME</button>
+                <div class="dice">
+                    <img class="dice-image" src="./images/inverted-dice-6.svg" alt="">
+                </div>
+                <button onclick="Game.rollDice()">ROLL DICE</button>
+                <button onclick="Game.holdCurrentScore()">HOLD</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

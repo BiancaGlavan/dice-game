@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #ea7af4, #b43e8f);
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container .player-turn, .container .winner {
+  margin-top: 20px;
+  color: #fefae0;
+}
+
+.game {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.game .player {
+  flex-grow: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.game .player h1 {
+  color: #fefae0;
+}
+.game .player .current-score {
+  background-color: #602437;
+  color: #fefae0;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+}
+.game .player .total-score {
+  margin-bottom: auto;
+  margin-top: 20px;
+  font-size: 70px;
+  color: #fefae0;
+  font-weight: lighter;
+}
+.game .player1 {
+  background-color: #f2a3f9;
+}
+.game .player2 {
+  background-color: #973778;
+}
+.game .buttons {
+  position: absolute;
+  height: 100%;
+  width: 280px;
+  padding: 20px;
+  top: 0;
+  left: calc(50% - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.game .buttons button {
+  border: none;
+  outline: none;
+  background: #fefae0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.game .buttons .dice {
+  background-color: #602437;
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: auto;
+  margin-top: 30px;
+}
+.game .buttons .dice img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
