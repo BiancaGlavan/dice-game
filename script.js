@@ -5,7 +5,7 @@ const totalScoreP2 = document.querySelector('.total-score-p2');
 const currentScoreP1 = document.querySelector('.current-score-p1');
 const currentScoreP2 = document.querySelector('.current-score-p2');
 const playerTurn = document.querySelector('.player-turn');
-
+const winner = document.querySelector('.winner');
 
 
 // game logic
@@ -32,6 +32,7 @@ const Game = {
         Game.player1CurrentScore = 0;
         Game.player2CurrentScore = 0;
         Game.playerTurn = 1;
+        winner.innerHTML = '';
         //update html blocks
 
         Game.printGame();
@@ -102,13 +103,13 @@ const Game = {
 
     checkWinner: () => {
         if (Game.player1TotalScore >= 100) {
-            //Player 1 won
-            //update game winner
+            winner.innerHTML = 'Player 1 won.';
+            Game.isGameActive = false;
         }
 
         if (Game.player2TotalScore >= 100) {
-            //Player 2 won
-            //update game winner
+            winner.innerHTML = 'Player 2 won.';
+            Game.isGameActive = false;
         }
 
 
