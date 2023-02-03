@@ -32,11 +32,16 @@ body {
 }
 .game .player {
   flex-grow: 1;
-  padding: 10px;
+  padding: 30px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .game .player {
+    padding: 10px;
+  }
 }
 .game .player h1 {
   color: #fefae0;
