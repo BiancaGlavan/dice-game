@@ -13,7 +13,9 @@
 
 # Dice game rules
 
--when it's a player's turn, he/she must click the roll dice button;
+When it's a player's turn, he/she must click the roll dice button;
+
+
 -the number on the dice will be added to the player's current score;
 -the player decides if he/she will continue to roll the dice to add points to his current score or
 if he/she will click the hold button, adding his current score to the total score(in this case
